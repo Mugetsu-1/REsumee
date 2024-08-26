@@ -2,75 +2,101 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
-    crossorigin="anonymous">
-   
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Resume</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
-<body>    
-    <div class="container">
-      <div class="header">
-        <div class="img-area">
-            <img src="billy.jpg" alt="Me">
-            </div>
-        <h1>Saugat Bikram Thapa</h1>
-         <h3><Bsc class="CSIT"></Bsc> Student</h3>
+
+<body>
+
+  <script src="Gradesheet.js"></script>
+
+  <div class="container">
+    <div class="header">
+      <div class="img-area">
+        <img src="billy.jpg" alt="Me">
       </div>
-      <script src="Gradesheet.js"></script>
-      <div class="main">
-        <div class="left">
-          <h2>Personal Information</h2>
-          <p><strong>Name:</strong> Saugat Bikram Thapa</p>
-          <p><strong>Age:</strong> 19</p>
-          <p><strong>Email:</strong> thapasaugat650@gmail.com</p>
-          <p><strong>Phone:</strong> 977+ 9746 5959 86</p>
-          <h2>Skills</h2>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>C/C++</li>
-            <li>Python</li>
-          </ul>
-          <h2>Education</h2>
-          <h3>B.Sc in Computer Science and Information Technology.</h3>
-          <p>Asian School of Higher Studies, 2023-Current</p> <br>
-          
-        </div>
-        
-        <div class="right">
-          <h2>Education Certificates</h2>
-          
-          <p><strong>SEE:</strong> </p>
+      <h1>Saugat Bikram Thapa</h1>
+      <h3>
+        <Bsc class="CSIT"></Bsc> Student
+      </h3>
+    </div>
+   
+    <div class="main">
+      <div class="left">
 
-            <button onclick="showImage()" class="btn btn-dark fs-2"> GradesheetX</button> &nbsp;
-            <button onclick="hideImage()" class="btn btn-dark fs-2"> Show less </button>
-            <img width="400px" id="GradesheetX">
+        <h2><b>Personal Information</b></h2>
+        <p><strong>Name:</strong> Saugat Bikram Thapa</p>
+        <p><strong>Age:</strong> 19</p>
+        <p><strong>Email:</strong> thapasaugat650@gmail.com</p>
+        <p><strong>Phone:</strong>  <u> 977+ 9746 5959 86</u></p>
+        <h2><b>Skills</b></h2>
 
+        <ul>
+          <li>HTML/CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>C/C++</li>
+          <li>Python</li>
+        </ul>
 
-          <p><strong>Grade XI:</strong></p>
-           
-           <button onclick="showImage()" class="btn btn-dark fs-2"> GradesheetXI</button> &nbsp;
-           <button onclick="hideImage()" class="btn btn-dark fs-2"> Show less </button>
-           <img width="400px">
+        <h2><b>Education</b></h2>
+        <p><strong>School Level.</strong></p>
+        <p><ul><u>VS. Niketon School, 2006-2020</u></ul></p> 
+        <p><strong>High School.</strong></p>
+        <p><ul><u>NIST-Gwarko , 2021-2022</u></ul></p> 
+        <p><strong>B.Sc in Computer Science and Information Technology.</strong></p>
+        <p><ul><u>Asian School of Higher Studies, 2023-Current</u></ul></p> 
 
-          <p><strong>Grade XII:</strong></p>
-
-           <button onclick="showImage()" class="btn btn-dark fs-2"> GradesheetXII</button> &nbsp;
-           <button onclick="hideImage()" class="btn btn-dark fs-2"> Show less </button>
-           <img width="400px">
-          
-             </div>
       </div>
-    </div> 
+
+      <div class="right">
+        <h2><b>Education Certificates</b></h2>
+
+        <p><strong>SEE:</strong> </p>
+
+        <button onclick="showImage1()" class="btn btn-dark"> GradesheetX</button> &nbsp;
+        <button onclick="hideImage1()" class="btn btn-dark"> Show less </button> <br><br>
+        <img width="150px" id="ten">
+
+
+        <p><strong>Grade XI:</strong></p>
+
+        <button onclick="showImage2()" class="btn btn-dark"> GradesheetXI</button> &nbsp;
+        <button onclick="hideImage2()" class="btn btn-dark"> Show less </button> <br><br>
+        <img width="150px" id="eleven"> 
+
+        <p><strong>Grade XII:</strong></p>
+
+        <button onclick="showImage3()" class="btn btn-dark"> GradesheetXII</button> &nbsp;
+        <button onclick="hideImage3()" class="btn btn-dark"> Show less </button> <br><br>
+        <img width="150px" id="twelve"> 
+     <div class="rightbottom">
+          <h2><b>Personal Clearifications</b></h2>
+          <p><strong>CitizenShip:</strong> </p>
+
+        <button onclick="showImage4()" class="btn btn-dark"> Front</button> &nbsp;
+        <button onclick="hideImage4()" class="btn btn-dark"> Back </button>
+        <button onclick="RemoveImage4()" class="btn btn-dark"> Remove </button> <br><br>
+        <img width="150px" id="CTZ">
+        <p><strong>Email Address:</strong> </p>
+        <p><a href="https://mail.google.com/mail/u/0/#inbox">Contact Email</a></p>
+          </div>
+      </div>
+    </div>
+  </div>
 
 </body>
-</html>
 
+</html>
